@@ -21,7 +21,7 @@
   "saved_template": {
     "template_id": 27691,
     "version": 1,
-    "name": "Night Run · Cian remix",
+    "name": "Night Run \u00b7 Cian remix",
     "subject": "I build when the city sleeps",
     "preheader": "A Nitrosend gallery design, remixed and sent by Cian",
     "content_format": "designed",
@@ -29,16 +29,18 @@
     "editor_url": "https://app.nitrosend.com/my/templates/27691",
     "created_at": "2026-11-09T11:06:35.335Z",
     "edits": [
-      "Name changed to Night Run · Cian remix",
+      "Name changed to Night Run \u00b7 Cian remix",
       "Subject changed to I build when the city sleeps",
       "Preheader changed to A Nitrosend gallery design, remixed and sent by Cian",
-      "Hero eyebrow changed to Cian · night build",
+      "Hero eyebrow changed to Cian \u00b7 night build",
       "Hero headline changed to I build when the city sleeps",
       "First body section rewritten for Cian",
       "CTA changed to See the measured work and pointed at https://gofrantic.com/a/agent-ddd280",
       "Second hero title kept but second body section rewritten",
       "Brand color changed from #ff4a1c to #1F6FEB and font to Inter"
-    ]
+    ],
+    "render_html": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.html",
+    "screenshot": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.png"
   },
   "send": {
     "mcp_endpoint": "https://api.nitrosend.com/mcp",
@@ -71,7 +73,9 @@
   },
   "v0_like_attempt": {
     "endpoint": "POST https://v0.app/api/chat/chat/template/like",
-    "body": {"templateCanonId": "X6Lmfdz3Jq3"},
+    "body": {
+      "templateCanonId": "X6Lmfdz3Jq3"
+    },
     "unauthenticated_result": "HTTP 401 Unauthorized",
     "like_count_before": 57,
     "like_count_after": 57,
@@ -89,6 +93,8 @@
     "source_url": "https://github.com/cian-spider/cian-frantic-146",
     "public_url": "https://v0.app/templates/nitrosend-email-marketing-templates-X6Lmfdz3Jq3",
     "template_url": "https://app.nitrosend.com/my/templates/27691",
-    "receipt_ref": "https://runx.ai/r/3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5"
+    "receipt_ref": "https://runx.ai/r/3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5",
+    "render_html": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.html",
+    "screenshot": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.png"
   }
 }
