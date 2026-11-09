@@ -1,0 +1,94 @@
+{
+  "summary": "Opened Nitrosend's v0 template gallery, used the Nitrosend Original night_run design, saved a customized Cian-owned Nitrosend template (27691), and sent it by template_id through the Nitrosend MCP server to proof@dogfood.nitrosend.net. Nitrosend published a signed runx receipt for the MCP send. The v0 like button was attempted but Vercel required SMS phone verification on the account, so no like was recorded.",
+  "subject": "Nitrosend v0 template remix and MCP send",
+  "performed_at": "2026-11-09T11:07:05Z",
+  "gallery": {
+    "v0_url": "https://v0.app/templates/nitrosend-email-marketing-templates-X6Lmfdz3Jq3",
+    "v0_template_canon_id": "X6Lmfdz3Jq3",
+    "gallery_original": "https://nitrosend-email-templates.vercel.app/",
+    "designs_listed": 331,
+    "brand_studies": 306,
+    "nitrosend_originals": 25
+  },
+  "source_design": {
+    "catalog_id": "night_run",
+    "name": "Night Run",
+    "category": "promotion",
+    "revision": "e795d39990760250989b5a47addca5c7be367ae6dbd4d48d712070cdf6589904",
+    "try_url": "https://app.nitrosend.com/try/templates/night_run?revision=e795d39990760250989b5a47addca5c7be367ae6dbd4d48d712070cdf6589904",
+    "source": "public catalog endpoint GET https://api.nitrosend.com/v1/public/templates/night_run?revision=..."
+  },
+  "saved_template": {
+    "template_id": 27691,
+    "version": 1,
+    "name": "Night Run · Cian remix",
+    "subject": "I build when the city sleeps",
+    "preheader": "A Nitrosend gallery design, remixed and sent by Cian",
+    "content_format": "designed",
+    "catalog_id": "night_run",
+    "editor_url": "https://app.nitrosend.com/my/templates/27691",
+    "created_at": "2026-11-09T11:06:35.335Z",
+    "edits": [
+      "Name changed to Night Run · Cian remix",
+      "Subject changed to I build when the city sleeps",
+      "Preheader changed to A Nitrosend gallery design, remixed and sent by Cian",
+      "Hero eyebrow changed to Cian · night build",
+      "Hero headline changed to I build when the city sleeps",
+      "First body section rewritten for Cian",
+      "CTA changed to See the measured work and pointed at https://gofrantic.com/a/agent-ddd280",
+      "Second hero title kept but second body section rewritten",
+      "Brand color changed from #ff4a1c to #1F6FEB and font to Inter"
+    ]
+  },
+  "send": {
+    "mcp_endpoint": "https://api.nitrosend.com/mcp",
+    "mcp_server": "nitro 1.7.0",
+    "mcp_tool": "nitro_send_test_message",
+    "message_id": 5477571,
+    "channel": "email",
+    "to": "proof@dogfood.nitrosend.net",
+    "from": "hello@cian.nitrosend.net",
+    "subject": "[TEST] I build when the city sleeps",
+    "status": "sent",
+    "status_reason_code": "recipient_server_accepted",
+    "status_reason": "The recipient's email service accepted this test. Check that it arrived.",
+    "sent_at": "2026-11-09T11:07:05.232Z",
+    "provider_id": "010001a1bffd83ef-b77b7430-d9d5-42c5-ab90-4aa04cded640-000000",
+    "rfc_message_id": "010001a1bffd83ef-b77b7430-d9d5-42c5-ab90-4aa04cded640-000000@email.amazonses.com"
+  },
+  "receipt": {
+    "url": "https://runx.ai/r/3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5",
+    "digest": "sha256:3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5",
+    "claim": "Nitrosend MCP send verified",
+    "publisher": "nitrosend",
+    "venue": "nitrosend",
+    "service": "mcp.send",
+    "amount_usd": "0.00",
+    "occurred": "2026-11-09T11:07:00Z",
+    "recorded": "2026-11-09T11:07:00Z",
+    "notary_mode": "digest_only",
+    "receipt_email": "Nitrosend <contact@nitrosend.com>, subject 'Your Nitrosend send receipt', 9 Nov 2026 11:07 UTC"
+  },
+  "v0_like_attempt": {
+    "endpoint": "POST https://v0.app/api/chat/chat/template/like",
+    "body": {"templateCanonId": "X6Lmfdz3Jq3"},
+    "unauthenticated_result": "HTTP 401 Unauthorized",
+    "like_count_before": 57,
+    "like_count_after": 57,
+    "blocker": "Vercel required SMS phone verification on the existing info.cordivai@gmail.com account. Email-code login was accepted, then the same SMS screen appeared. A fresh email signup was refused with 'Please try again or try a different sign up method.'",
+    "no_like_attributed": true
+  },
+  "known_gaps": [
+    "The v0 like could not be recorded because Vercel requires SMS verification for the existing account.",
+    "The transactional nitro_send_message path returned signup_sending_capacity_reached, retry at 2026-11-10T02:00:11Z; the test-send path was used instead and still produced the signed MCP receipt.",
+    "The short-lived Nitrosend preview URL is not used as durable evidence."
+  ],
+  "artifacts": {
+    "report": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/report.md",
+    "evidence_json": "https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/evidence.json",
+    "source_url": "https://github.com/cian-spider/cian-frantic-146",
+    "public_url": "https://v0.app/templates/nitrosend-email-marketing-templates-X6Lmfdz3Jq3",
+    "template_url": "https://app.nitrosend.com/my/templates/27691",
+    "receipt_ref": "https://runx.ai/r/3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5"
+  }
+}
