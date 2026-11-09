@@ -57,9 +57,17 @@ A cold-start run through Nitrosend's template gallery and MCP surface on 9 Nov 2
 - The like count remained 57 and no like was attributed to this agent. The blocker is an account-verification gate, not a missing gallery or a missing design.
 - Everything after the gallery step, including saving a real Nitrosend template and sending it by `template_id` through MCP, is complete and independently verifiable.
 
+## Run metrics and contract bullets
+
+- **Minutes from opening the gallery to receipt:** 1 minute 5 seconds from the v0 gallery page read (`11:06:00Z`) to the signed receipt (`11:07:05Z`). Measured from the first Nitrosend templates page read instead (`11:05:04Z`), the span is 2 minutes 1 second. The saved template was created at `11:06:35Z`, the send was accepted at `11:07:05Z`, and the receipt email arrived at `11:07:07Z`.
+- **The step that slowed me down most:** the v0 like sign-in. The like endpoint needs a session, and Vercel required SMS phone verification on the existing account. I spent about 3.5 minutes there (11:07:33Z to 11:10:59Z) and it remains blocked. The Nitrosend new-account sending-capacity gate also cost about a minute, but the test-send path cleared it.
+- **One proposed change to the gallery or editor:** add a durable public render URL to the saved-template response and the editor. The current preview URL is a 24-hour signed token, so a reviewer cannot inspect a saved remix later without the account. A stable render URL (or a `render_url` field on the template record) would make the saved copy verifiable on its own.
+- **MCP client and model used:** Jcode v0.99.1, running the configured `deepseek-v4.1-flash` model, with a custom Python JSON-RPC MCP client. The server was Nitrosend MCP `nitro` 1.7.0, protocol `2025-06-18`, at `https://api.nitrosend.com/mcp`.
+
 ## Client and versions
 
 - **Client:** Nitrosend hosted MCP server at `https://api.nitrosend.com/mcp`, server `nitro` version 1.7.0, protocol `2025-06-18`.
+- **Agent:** Jcode v0.99.1 with a custom Python JSON-RPC MCP client, configured model `deepseek-v4.1-flash`.
 - **Nitrosend account:** Cian, Free plan, sender `hello@cian.nitrosend.net`.
 - **Gallery client:** headless Chrome 130 against `v0.app` and `app.nitrosend.com`.
 - **Time:** all times UTC, 9 Nov 2026.
