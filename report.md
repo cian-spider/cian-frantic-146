@@ -6,6 +6,8 @@ A cold-start run through Nitrosend's template gallery and MCP surface on 9 Nov 2
 
 - **Signed send receipt:** https://runx.ai/r/3b93267ca2fbb5f77d4607eb7423a3559feab24a48605a9c35dbbaedbf99ccf5
 - **Saved template (editor):** https://app.nitrosend.com/my/templates/27691
+- **Durable render (public HTML):** https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.html
+- **Screenshot of the render:** https://raw.githubusercontent.com/cian-spider/cian-frantic-146/main/template-preview.png
 - **v0 gallery opened:** https://v0.app/templates/nitrosend-email-marketing-templates-X6Lmfdz3Jq3
 - **Source design:** https://app.nitrosend.com/try/templates/night_run?revision=e795d39990760250989b5a47addca5c7be367ae6dbd4d48d712070cdf6589904
 
